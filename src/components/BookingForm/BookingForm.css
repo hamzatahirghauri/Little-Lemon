@@ -1,0 +1,11 @@
+.form {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.form__confirmation {
+  background-color: var(--color-secondary-2);
+  border: 2px solid var(--color-secondary-1);
+  border-radius: var(--border-radius-1);
+  padding: 2.4rem;
+}

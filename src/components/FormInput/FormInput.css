@@ -1,0 +1,63 @@
+.form__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__label {
+  color: var(--color-primary-1);
+}
+
+.form__input,
+.form__select {
+  width: 100%;
+  max-width: 32rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary-1);
+  border-radius: var(--border-radius-2);
+  padding: 0.5em;
+  height: 4rem;
+}
+
+.form__input:hover,
+.form__select:hover,
+.form__input:active,
+.form__select:active,
+.form__input:focus,
+.form__select:focus {
+  border: 2px solid var(--color-primary-2);
+  outline-color: var(--color-primary-2);
+}
+
+.form__input:invalid[focused="true"] {
+  border-color: red;
+}
+
+.form__error-message {
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  color: red;
+  transition: all 0.2s ease-in-out;
+}
+
+.form__input:invalid[focused="true"] ~ .form__error-message {
+  height: initial;
+  opacity: 1;
+}
+
+.form__button {
+  width: 100%;
+  max-width: 32rem;
+
+  padding: 0.5em;
+  background-color: var(--color-primary-2);
+  border: none;
+  border-radius: var(--border-radius-2);
+}
+
+.form__button:hover,
+.form__button:active,
+.form__button:focus {
+  background-color: var(--color-secondary-1);
+}

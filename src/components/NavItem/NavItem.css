@@ -1,0 +1,11 @@
+.header__navbar-link:hover,
+.header__navbar-link:active {
+  color: var(--color-secondary-1);
+}
+
+@media (min-width: 50em) {
+  .header__navbar-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}

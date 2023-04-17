@@ -1,0 +1,136 @@
+/* FONT IMPORTS */
+/* Markazi Text */
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
+/* Karla */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap");
+
+/* CUSTOM PROPERTIES */
+:root {
+  /* Colors */
+  --color-primary-1: #495e57;
+  --color-primary-2: #f4ce14;
+  --color-secondary-1: #ee9972;
+  --color-secondary-2: #fbdabb;
+  --color-highlight-1: #edefee;
+  --color-highlight-2: #333333;
+  --color-white: #ffffff;
+  /* Fonts */
+  --font-heading: "Markazi Text", serif;
+  --font-text: "Karla", sans-serif;
+  /* Border radius */
+  --border-radius-1: 16px;
+  --border-radius-2: 8px;
+  /* Spacing */
+  --spacing-base: 0.8rem;
+  --spacing-top: 4rem;
+  --spacing-bottom: 8rem;
+  --spancing-horizontal: 2.4rem;
+  /* Widths */
+  --full-width: 85.8rem;
+}
+
+/* RESET */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--color-primary-1);
+  color: var(--color-highlight-1);
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--font-text);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* TYPOGRAPHY */
+.font-display-title {
+  font-family: var(--font-heading);
+  font-size: 6.4rem;
+  font-weight: 500;
+}
+
+.font-subtitle {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.font-lead-text {
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.font-section-title {
+  font-family: var(--font-text);
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.font-section-categories {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.font-card-title {
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.font-paragraph-text {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+
+.font-highlight-text {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 500;
+}

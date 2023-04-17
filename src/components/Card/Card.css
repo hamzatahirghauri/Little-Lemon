@@ -1,0 +1,57 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20.4rem 1fr;
+  border-radius: var(--border-radius-2);
+  overflow: hidden;
+  background-color: var(--color-highlight-1);
+}
+
+.card__image-container {
+  overflow: hidden;
+}
+
+.card__image {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .card__image {
+  transform: scale(1.1);
+}
+
+.card__information {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card__info-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__info-title {
+}
+
+.card__info-price {
+  color: var(--color-secondary-1);
+}
+
+.card__info-description {
+  flex-grow: 1;
+}
+
+.card__info-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card__info-cta:hover,
+.card__info-cta:active {
+  color: var(--color-secondary-1);
+}

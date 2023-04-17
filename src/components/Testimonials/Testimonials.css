@@ -1,0 +1,25 @@
+.testiominals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2.4rem 8rem 2.4rem;
+  background-color: var(--color-highlight-1);
+}
+
+.container--testiominals {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.testiominals__title {
+}
+
+.testiominals__cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(var(--full-width) / 4 - 3 * 1.6rem), 1fr)
+  );
+  gap: 1.6rem;
+}

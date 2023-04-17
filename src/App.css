@@ -1,0 +1,14 @@
+main {
+  /* Header's contents + paddings */
+  padding-top: calc(5 * var(--spacing-base) + 4 * var(--spacing-base));
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}

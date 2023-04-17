@@ -1,0 +1,16 @@
+.footer-nav__title {
+  color: var(--color-white);
+}
+
+.footer-nav__nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-nav__nav-item:hover {
+  color: var(--color-secondary-1);
+}
+
+.footer-nav__link {
+}

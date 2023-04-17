@@ -1,0 +1,9 @@
+.reservations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2.4rem 8rem 2.4rem;
+}
+
+.container--reservations {
+}

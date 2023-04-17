@@ -1,0 +1,41 @@
+.specials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2.4rem 8rem 2.4rem;
+}
+
+.container--specials {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.specials__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Gap is the minimum space between the card title and cta */
+  gap: 2.4rem;
+}
+
+.specials__title {
+}
+
+.specials__cta {
+  background-color: var(--color-primary-2);
+  border: none;
+  padding: 1em 2em;
+  border-radius: var(--border-radius-1);
+}
+
+.specials__cards {
+  display: grid;
+  /* Each card's max-width is the --full-width/3 - 2 * column-gap */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(var(--full-width) / 3 - 2 * 3.2rem), 1fr)
+  );
+  column-gap: 3.2rem;
+  row-gap: 4rem;
+}
